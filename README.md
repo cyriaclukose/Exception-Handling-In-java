@@ -37,6 +37,19 @@ Exception occurs due to the application .The programme can recover from exceptio
      
      Eg:
      public int sum(int a,int b) throws InvalidInput
+    { 
+       if(isValid(a,b))
+       {
+       return a+b;
+       }else
+       {
+       
+       throw new InvalidInput("inputs should have non zero positive values");
+       }
+       
+     
+     
+     }
      
      
      
