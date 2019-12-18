@@ -56,5 +56,40 @@ Exception occurs due to the application .The programme can recover from exceptio
      
      Custom exception can be created either by extending the Exception class or RuntimeException class
      
+    when the exception are handled using multiple catch blocks the order of the exceptuion should from specific to generic.Other wis eit 
+    will throw compliation error
+    
+    Eg:
+    try{
+    
+    }catch(InvalidIputException e1)
+    {
+    }catch(Exception e2)
+    {
+    
+    
+    }
+    
+    From java 7 onward we have try with resources .Here we dont have to close the resource explicitly in the finally
+    block if the resource implements AutClosable interface
+    
+    For Eg: BufferedReader implements autoclosable 
+    
+    try(
+    
+    BufferedReader br=new BufferedReader(new FileReader("filePath"))
+    ){
+    String line=br.readLine()
+    
+    while(line!=null)
+    {
+    System.out.println(line);
+    }
+    
+    }
+    catch(IOException e)
+    {
+    
+    }
      
      
