@@ -52,5 +52,9 @@ Exception occurs due to the application .The programme can recover from exceptio
      }
      
      
+     Cutom Exception:
+     
+     Custom exception can be created either by extending the Exception class or RuntimeException class
+     
      
      
